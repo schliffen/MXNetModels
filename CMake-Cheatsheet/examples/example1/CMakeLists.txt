@@ -11,7 +11,7 @@ project (HelloProject)
 # into the executable Hello
 add_subdirectory( src )
 add_subdirectory( include )   
-
+set(CMAKE_BUILD_TYPE Debug)
 #add_executable(exam1.out src/main.cpp src/foo.cpp)
 
 #SET( mesa "This is root dir ")

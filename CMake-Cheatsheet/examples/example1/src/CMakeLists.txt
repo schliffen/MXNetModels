@@ -3,8 +3,9 @@ cmake_minimum_required (VERSION 3.1)
 # including required directories
 include_directories( ../include/)
 
+set(CMAKE_BUILD_TYPE Debug)
 
-add_executable(exam1.out main.cpp )
+add_executable(exam2.out main.cpp )
 
 # linking them toghether
-target_link_libraries( exam1.out Foo )
+target_link_libraries( exam2.out Foo )

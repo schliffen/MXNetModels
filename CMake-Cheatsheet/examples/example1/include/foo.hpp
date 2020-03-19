@@ -2,5 +2,12 @@
 
 class foo{
     public:
-          static void hello( void ); 
+          static double hello( double ); 
+};
+
+class foo2{
+    private:
+       void pname(const char *);
+    public:
+    double divisor (double, double);
 };
