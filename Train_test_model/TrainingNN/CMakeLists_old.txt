@@ -5,19 +5,19 @@ project(prj1 VERSION 0.1.0)
 file(TO_CMAKE_PATH "$ENV{MXNET_ROOT}" MXNET_ROOT)
 
 SET(MXNET_INCLUDE_SEARCH_PATHS
-  ~/BMXNet-v2
-  ~/BMXNet-v2/include
-  ~/BMXNet-v2/include/mxnet
-  ~/BMXNet-v2/cpp-package/include
-  ~/BMXNet-v2/3rdparty/tvm/nnvm/include
-  ${MXNET_ROOT}/include/BMXNet-v2
+  ~/mxnet
+  ~/mxnet/include
+  ~/mxnet/include/mxnet
+  ~/mxnet/cpp-package/include
+  ~/mxnet/3rdparty/tvm/nnvm/include
+  ${MXNET_ROOT}/include/mxnet
 )
 
 SET(MXNET_LIB_SEARCH_PATHS
-~/BMXNet-v2/build/release
-~/BMXNet-v2/src
-~/BMXNet-v2/
-~/BMXNet-v2/3rdparty/tvm/nnvm/include/
+~/mxnet/build/release
+~/mxnet/src
+~/mxnet/
+~/mxnet/3rdparty/tvm/nnvm/include/
         /lib
         /lib/mxnet
         /lib64
@@ -52,8 +52,8 @@ set(MxNet_INCLUDE_DIRS
   ${MxNet_INCLUDE_DIR}/../../mshadow
   ${MxNet_INCLUDE_DIR}/../../nnvm/include
   ${MxNet_INCLUDE_DIR}/dlpack/include
-  ~/BMXNet-v2/3rdparty/tvm/nnvm/include
-  ~/BMXNet-v2/3rdparty/dmlc-core/include
+  ~/mxnet/3rdparty/tvm/nnvm/include
+  ~/mxnet/3rdparty/dmlc-core/include
 )
 
 #    Check libraries
